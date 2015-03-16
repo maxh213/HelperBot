@@ -234,7 +234,7 @@ def auto_unmute():
 def main():
     while True:
         time.sleep(TWEET_EVERY_N_SECONDS)
-        auto_rt("#pun", count=1000)
+        auto_rt("#pun", 3)
 
 if __name__ == '__main__':
     main()
