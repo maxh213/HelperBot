@@ -18,7 +18,7 @@ ALREADY_FOLLOWED_FILE = "already-followed.csv"
 t = Twitter(auth=OAuth(OAUTH_TOKEN, OAUTH_SECRET,
             CONSUMER_KEY, CONSUMER_SECRET))
 
-TWEET_EVERY_N_SECONDS = 60*1 # e.g. 60*10 = ten minutes between each tweet
+TWEET_EVERY_N_SECONDS = 60*10 # e.g. 60*10 = ten minutes between each tweet
 
 def search_tweets(q, count=100, result_type="recent"):
     """
@@ -235,8 +235,6 @@ def main():
     while True:
         time.sleep(TWEET_EVERY_N_SECONDS)
         auto_rt("#pun", count=1000)
-		auto_follow_followers()
-		auto_unfollow_nonfollowers()
 
 if __name__ == '__main__':
     main()
