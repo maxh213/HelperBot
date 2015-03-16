@@ -2,6 +2,7 @@
 
 from twitter import Twitter, OAuth, TwitterHTTPError
 import os
+import time
 
 # put your tokens, keys, secrets, and Twitter handle in the following variables
 OAUTH_TOKEN = "2459695088-KUirrqopXOPJD1RvriwmHNbjlsHcLub8lNj5nT1"
